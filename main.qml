@@ -14,9 +14,15 @@ ApplicationWindow {
         width: 0.66 * windowId.width
         height: windowId.height
         interactive: true
-        Label {
-            text: "Content goes here!"
-            anchors.centerIn: parent
+
+        Image {
+            id: image
+            x: 0
+            y: 0
+            width: parent.width
+            height: 200
+            source: "/images/save_money.jpg"
+            fillMode: Image.Stretch
         }
     }
 }
