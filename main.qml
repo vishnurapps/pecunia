@@ -15,14 +15,39 @@ ApplicationWindow {
         height: windowId.height
         interactive: true
 
-        Image {
-            id: image
-            x: 0
-            y: 0
+        Column {
+            id: column
             width: parent.width
-            height: 200
-            source: "/images/save_money.jpg"
-            fillMode: Image.Stretch
+            height: parent.height
+
+            Image {
+                id: image
+                width: parent.width
+                height: 200
+                source: "/images/save_money.jpg"
+                fillMode: Image.Stretch
+            }
+
+            Label {
+                id: accountsLabelId
+                width: parent.width
+                font.pixelSize: 40
+                text: qsTr("Accounts")
+            }
+
+            Label {
+                id: budgetsLabelId
+                width: parent.width
+                font.pixelSize: 40
+                text: qsTr("Budgets")
+            }
+
+            Label {
+                id: savingsLabelId
+                width: parent.width
+                font.pixelSize: 40
+                text: qsTr("Savings")
+            }
         }
     }
 }
