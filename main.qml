@@ -9,6 +9,11 @@ ApplicationWindow {
     height: 480
     title: qsTr("pecunia")
 
+    header: Image{
+            id: headerImage
+            source: "/images/header.jpeg"
+    }
+
     Drawer {
         id: drawer
         width: 0.66 * windowId.width
