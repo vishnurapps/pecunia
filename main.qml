@@ -29,7 +29,8 @@ ApplicationWindow {
                 id: image
                 width: parent.width
                 height: 200
-                source: "/images/save_money.jpg"
+                //source: "/images/save_money.jpg"
+                source: "/images/header.jpeg"
                 fillMode: Image.Stretch
             }
 
